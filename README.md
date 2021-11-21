@@ -17,11 +17,9 @@ Windows 10 Emulator is a website where you can take experience of Windows 10 in 
 - Word
 - Excel
 - VS Code
-- Microsoft Teams
 - Microsoft Store
 - Microsoft Bing
-- CPU-Z
-- GPU-Z
+
 
 
 ## Authors 👨
