@@ -1,7 +1,7 @@
 
-# Windows 10 in HTML
+# Windows 10 Emulator
 
-Windows 10 in HTML is a website where you can take experience of Windows 10 in your Browser
+Windows 10 Emulator is a website where you can take experience of Windows 10 in your Browser
 
 
 ## Link 
