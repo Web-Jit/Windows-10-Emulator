@@ -1,0 +1,33 @@
+body{
+    background-size: 125%;
+    background-repeat: no-repeat;
+}
+.side li{
+    width: 70px;
+    height: 60px;
+}
+
+.rest{
+    font-size: 10px;
+}
+.imgg{
+    width: 34px;
+}
+.ltaskbar li a img{
+    height: 20px;
+    width: 20px;
+
+}
+.rtaskbar{
+    height: 40px;
+}
+.rpc img{
+    width: 10rem;
+}
+.rbtn{
+    font-size: 4px;
+    width: 71px;
+}
+.font{
+    width: 70%;
+}

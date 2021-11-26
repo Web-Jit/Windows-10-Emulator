@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 Emulator</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/windows-10.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="./css/laptop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <ul class="nav ltaskbar">
+    <li class="nav-item hlink2">
+      <a class="taskbarllink" data-bs-toggle="modal" data-bs-target="#windowsmenu" href="#"><img src="https://img.icons8.com/ios-filled/30/000000/windows-10.png"></a>
+    </li>
+    <li class="nav-item hlink2" >
+      <a class="taskbarllink" data-bs-toggle="modal" data-bs-target="#winsearch" href="#"><img src="https://img.icons8.com/windows/30/000000/search--v1.png"/></a>
+    </li>
+    <li class="nav-item hlink2" data-bs-toggle="modal" data-bs-target="#microsoftedge">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/fluent/30/000000/ms-edge-new.png"></a>
+    </li>
+    <li class="nav-item hlink2">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/color/30/000000/windows-explorer.png"></a>
+    </li>
+    <li class="nav-item hlink2" data-bs-toggle="modal" data-bs-target="#teams">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/fluent/30/000000/microsoft-teams-2019.png"></a>
+    </li>
+    <li class="nav-item hlink2" data-bs-toggle="modal" data-bs-target="#store">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/fluent/30/000000/microsoft-store.png"/></a>
+    </li>
+    <li class="nav-item hlink2" data-bs-toggle="modal" data-bs-target="#photoshop">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/color/30/000000/adobe-photoshop--v1.png"/></a>
+    </li>
+    <li class="nav-item hlink2" data-bs-toggle="modal" data-bs-target="#vscode">
+      <a class="taskbarllink" href="#"><img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/></a>
+    </li>
+  </ul>
+
+
+
+
+
+  <ul class="nav justify-content-end rtaskbar">
+    <li class="nav-item ssfi">
+      <a class="nav-link rico" style="padding: 8px 4px;" href="#"><img src="./images/up-arrow.png" style="width: 20px;height: 20px;"></a>
+    </li>
+    <li class="nav-item ssfi">
+      <a class="nav-link rico" style="padding: 8px 4px;" href="#"><img src="./images/lan.png" style="width: 20px;"></a>
+    </li>
+    <li class="nav-item ssfi" data-bs-toggle="modal" data-bs-target="#volumemenu">
+      <a class="nav-link rico" style="padding: 8px 4px;" href="#"><img src="./images/speaker.png"></a>
+    </li>
+    <li class="nav-item ssfi" data-bs-toggle="modal" data-bs-target="#calender" >
+      <div style="text-align: center;padding-right: 10px;padding-left: 10px;">
+      <span class="clock"></span> <br>
+      <span id="current_date"></span>
+    </div>
+  </li>
+  <li class="nav-item ssfi">
+    <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#"><svg xmlns="http://www.w3.org/2000/svg" style="color: black;" width="20" height="20" fill="currentColor" class="bi bi-chat-square" viewBox="0 0 16 16">
+      <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+    </svg></a>
+  </li>
+
+  </ul>
+
+
+      <!-- Side Navbar  -->
+      <ul class="nav flex-column side" style="width: 6%; text-align: center;">
+        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#thispc">
+          <a class="link" href="#"><img class="imgg" src="./images/this pc.png"/> <p class="rest">This Pc</p></a>
+        </li>
+        <li class="nav-item " data-bs-toggle="modal" data-bs-target="#recyclebin">
+          <a class="link" href="#"><img class="imgg" src="./images/recycle bin.png"/> <p class="rest">Recycle Bin</p></a>
+        </li>
+        <li class="nav-item " data-bs-toggle="modal" data-bs-target="#word">
+          <a class="link" href="#"><img class="imgg" src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png"/> <p class="rest">Word</p></a>
+        </li>
+        <li class="nav-item " data-bs-toggle="modal" data-bs-target="#excel">
+          <a class="link" href="#"><img class="imgg" src="https://img.icons8.com/color/48/000000/microsoft-excel-2019--v1.png"/> <p class="rest">Excel</p></a>
+        </li>
+      </ul>
+
+
+  <!-- This Pc  -->
+  <!-- Modal -->
+  <div class="modal" id="thispc" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog opacity-animate3 modal-xl" id="draggable-div">
+      <div class="modal-content" style="height: 38rem; border-radius: 0; border: 0px solid rgba(0,0,0,.2);">
+        <div class="modal-header" style="padding: 0;">
+          <h5 class="modal-title headhead" id="exampleModalLabel"><img src="./images/this pc.png" class="headicon"> &nbsp; This Pc</h5>
+          <div class="closeminibtn" >
+            <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+          </div>
+        </div>
+        <div class="modal-body" style="padding: 0rem;">
+          <div class="pingtion">
+            <a href="#" class="link2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+            </a>
+            <a href="#" class="link2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+            <a href="#" class="link2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+              </svg>
+            </a>
+            </div>
+            <div class="directry">
+              <img src="./images/this pc.png" alt="this pc" style="width: 19px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+              <span>This Pc</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+            </div>
+            <div class="directrysearch">
+              <input type="text" placeholder="Search This Pc">
+            </div>
+
+
+            <div class="rightdrives">
+              <div class="rightfolder">
+
+              </div>
+              <hr>
+              <div class="harddrives">
+                <div class="drives">
+                  <img src="./images/c drive.png" >
+                  <p style="margin: 0;" >System (C:)</p>
+                    <div class="progress" style="border-radius: 0; width: 152px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p style="margin: 0;">200 GB free of 500 GB</p>
+                </div>
+                <div class="drives">
+                  <img src="./images/c drive.png" >
+                  <p style="margin: 0;" >System (C:)</p>
+                    <div class="progress" style="border-radius: 0; width: 152px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p style="margin: 0;">200 GB free of 500 GB</p>
+                </div>
+                <div class="drives">
+                  <img src="./images/c drive.png" >
+                  <p style="margin: 0;" >System (C:)</p>
+                    <div class="progress" style="border-radius: 0; width: 152px;">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p style="margin: 0;">200 GB free of 500 GB</p>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Recycle Bin  -->
+  <div class="modal" id="recyclebin" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog opacity-animate3 modal-xl" >
+      <div class="modal-content" style="height: 38rem; border: 0px solid rgba(0,0,0,.2);" id="recyclebin">
+        <div class="modal-header" style="padding: 0;">
+          <h5 class="modal-title headhead" id="exampleModalLabel"><img src="./images/recycle bin.png" class="headicon"/> Recycle Bin</h5>
+          <div class="closeminibtn" >
+            <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+          </div>
+        </div>
+        <div class="modal-body" style="padding: 0rem;">
+              
+              
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Windows 10 Menu  -->
+
+<div class="modal" id="windowsmenu" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+  <div class="modal-dialog" style="position: absolute; bottom: 17px;">
+    <div class="modal-content" style="border: 0px solid rgba(0,0,0,.2);">
+      <div class="modal-body" style="padding: 0;">
+        <img src="./images/windows menu.png" alt="Windows Menu" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Windows 10 Menu END  -->
+
+
+<!-- message center  -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel" style="visibility: hidden; background-color: rgb(205, 205, 205);" aria-hidden="true">
+  <div class="offcanvas-header">
+    <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+  </div>
+  <div class="offcanvas-body">
+    <div class="offcanvas-body" style="text-align: right; padding: 0px 15px;">
+      Manage Notification 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="newnotification">
+      No New Notification
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- C DRIVE (System)  -->
+<div class="modal" id="exampleModalToggle4" aria-hidden="true" data-bs-backdrop="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content" style="height: 38rem; border: 0px solid rgba(0,0,0,.2);" id="mydiv1">
+      <div class="modal-header" style="padding: 0;">
+        <img src="./images/c drive.png" alt="" style="width: 25px;">
+        <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        
+        <div class="pingtion">
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+          </a>
+          </div>
+          <div class="directry">
+            <img src="./images/this pc.png" alt="this pc" style="width: 19px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            <span>This Pc</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+          </div>
+          <div class="directrysearch">
+            <input type="text" placeholder="Search This Pc">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- D DRIVE  -->
+<div class="modal" id="exampleModalToggle2" aria-hidden="true" data-bs-backdrop="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content" style="height: 38rem; border: 0px solid rgba(0,0,0,.2);" id="mydiv2">
+      <div class="modal-header" style="padding: 0;">
+        <img src="./images/d drive.png" alt="" style="width: 25px;">
+        <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5> -->
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        <div class="pingtion">
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+          </a>
+          </div>
+          <div class="directry">
+            <img src="./images/this pc.png" alt="this pc" style="width: 19px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            <span>This Pc</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+          </div>
+          <div class="directrysearch">
+            <input type="text" placeholder="Search This Pc">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- E DRIVE (Youtube) -->
+<div class="modal" id="exampleModalToggle3" aria-hidden="true" data-bs-backdrop="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content" style="height: 38rem; border: 0px solid rgba(0,0,0,.2);" id="mydiv3">
+      <div class="modal-header" style="padding: 0px;">
+        <img src="./images/d drive.png" alt="" style="width: 25px;">
+        <!-- <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>  -->
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        <div class="pingtion">
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+          <a href="#" class="link2" data-bs-target="#thispc" data-bs-toggle="modal" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+          </a>
+          </div>
+          <div class="directry">
+            <img src="./images/this pc.png" alt="this pc" style="width: 19px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            <span>This Pc</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+          </div>
+          <div class="directrysearch">
+            <input type="text" placeholder="Search This Pc">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- word  -->
+
+
+<!-- Modal -->
+<div class="modal" id="word" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content ">
+      <div class="modal-header" style=" padding: 0;">
+        <div style="text-align: center; width: 100%;">
+          <h5 class="modal-title headhead" id="exampleModalLabel">Document1 - Microsoft Word</h5>
+        </div>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        <div class="wordtoolbar" >
+          <div class="clipboard">
+            <div class="pasteicon m-1">
+              <button type="button" class="btn pastebtn "><img src="https://img.icons8.com/color/30/000000/paste.png"/>
+                <p>Paste</p></button>
+            </div>
+            <div class="cutcopyicons">
+              <a href="#" class="link2 cutcopyiconsa">Cut</a> <br>
+              <a href="#" onclick="myFunction()" class="link2 cutcopyiconsa">Copy</a> <br>
+              <a href="#" class="link2 cutcopyiconsa">Format Printer</a> <br>
+            </div>
+          </div>
+
+          <!-- Font  -->
+          <div class="font">
+            <!-- Split dropup button -->
+            <div class="dropdown" style="margin-left: 8px;">
+              <button class="btn d-inline fontinput dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Calibri (Body)
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Calibri</a></li>
+                <li><a class="dropdown-item" href="#">Arial</a></li>
+                <li><a class="dropdown-item" href="#">Calibri Light</a></li>
+                <li><a class="dropdown-item" href="#">Bebas Neue</a></li>
+                <li><a class="dropdown-item" href="#">Booksman Old Style</a></li>
+                <li><a class="dropdown-item" href="#">Gotham Black</a></li>
+                <li><a class="dropdown-item" href="#">Roboto</a></li>
+                <li><a class="dropdown-item" href="#">Open Sans</a></li>
+              </ul>
+            </div>
+            <!-- Font Size  -->
+            <div class="dropdown">
+              <button class="btn d-inline fontsize dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                11
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">8</a></li>
+                <li><a class="dropdown-item" href="#">9</a></li>
+                <li><a class="dropdown-item" href="#">10</a></li>
+                <li><a class="dropdown-item" href="#">11</a></li>
+                <li><a class="dropdown-item" href="#">12</a></li>
+                <li><a class="dropdown-item" href="#">14</a></li>
+                <li><a class="dropdown-item" href="#">16</a></li>
+                <li><a class="dropdown-item" href="#">18</a></li>
+                <li><a class="dropdown-item" href="#">20</a></li>
+                <li><a class="dropdown-item" href="#">22</a></li>
+                <li><a class="dropdown-item" href="#">24</a></li>
+                <li><a class="dropdown-item" href="#">26</a></li>
+                <li><a class="dropdown-item" href="#">28</a></li>
+                <li><a class="dropdown-item" href="#">30</a></li>
+                <li><a class="dropdown-item" href="#">32</a></li>
+                <!-- bold  -->
+              </ul>
+            </div>
+            
+            <button type="button" onclick="f6()" class="btn" style="width: 50px;" data-toggle="tooltip" data-placement="top" title="Uppercase Text">A</button>
+            <button type="button" onclick="f7()" class="btn" style="display: inline;" data-toggle="tooltip" data-placement="top" title="Lowercase Text">a</button>
+            <!-- Second Row  --> <br>
+            <button type="button"  onclick="f1()" class="btn" style="width: 40px; margin-left: 9px;" data-toggle="tooltip"data-placement="top" title="Bold Text"> <strong>B</strong></button>
+            <button type="button"  onclick="f2()" class="btn" style="width: 35px;" data-toggle="tooltip" data-placement="top" title="Italic Text"> <i><strong>I</strong></i> </button>
+            <button type="button" onclick="underline_click()" style="width: 40px;" title="Underline Text" class="btn">U</button>
+            <button type="button" onclick="f3()" class="btn" style="width: 50px;" data-toggle="tooltip" data-placement="top"title="Left Align"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg></button>
+            <button type="button" onclick="f4()" class="btn" style="width: 50px;" data-toggle="tooltip" data-placement="top" title="Center Align"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg></button>
+            <button type="button" onclick="f5()" class="btn" style="width: 50px;" data-toggle="tooltip" data-placement="top" title="Right Align"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-text-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg></button>
+            
+            <button type="button" onclick="normal_click()" class="btn" style="width: 50px;"> <img src="https://img.icons8.com/material-outlined/20/000000/clear-symbol--v1.png"/></button>
+          </div>
+        </div>
+                      <!-- Adding different buttons for
+                           different functionality-->
+                      <!--onclick attribute is added to give 
+                          button a work to do when it is clicked-->
+
+
+                      <!-- <button type="button" onclick="f1()" class=" shadow-sm btn btn-outline-secondary" data-toggle="tooltip"data-placement="top" title="Bold Text">Bold</button>
+                      <button type="button" onclick="f2()" class="shadow-sm btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Italic Text">Italic</button>
+                      <button type="button" onclick="f8()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Capitalize Text">Capitalize</button>
+                      <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Clear Text</button> -->
+
+              <div class="" style="text-align: center;width: 100%; background: #f1f3f4; display: inline-block; ">
+                <textarea id="textarea1" style="resize: none;" class=" wordinput" name="name" rows="15" cols="100" ></textarea>
+              </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- excel  -->
+
+
+<!-- Modal -->
+<div class="modal" id="excel" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content ">
+      <div class="modal-header" style=" padding: 0;">
+        <div style="text-align: center; width: 100%;">
+          <h5 class="modal-title headhead" id="exampleModalLabel">Workbook1 - Microsoft Excel</h5>
+        </div>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        <div class="clipboard">
+          <div class="pasteicon m-1">
+            <button type="button" class="btn pastebtn "><img src="https://img.icons8.com/color/30/000000/paste.png"/>
+              <p>Paste</p></button>
+          </div>
+          <div class="cutcopyicons">
+            <a href="#" class="link2 cutcopyiconsa">Cut</a> <br>
+            <a href="#" onclick="myFunction()" class="link2 cutcopyiconsa">Copy</a> <br>
+            <a href="#" class="link2 cutcopyiconsa">Format Printer</a> <br>
+          </div>
+        </div>
+
+<!-- cells  -->
+<div class="cells">
+  <div class="cells__spacer"></div>
+  <div class="cells__alphabet">A</div>
+  <div class="cells__alphabet">B</div>
+  <div class="cells__alphabet">C</div>
+  <div class="cells__alphabet">D</div>
+  <div class="cells__alphabet">E</div>
+  <div class="cells__alphabet">F</div>
+  <div class="cells__alphabet">G</div>
+  <div class="cells__alphabet">H</div>
+  <div class="cells__alphabet">I</div>
+  <div class="cells__alphabet">J</div>
+  <div class="cells__alphabet">K</div>
+  <div class="cells__number">1</div>
+  <div class="cells__number">2</div>
+  <div class="cells__number">3</div>
+  <div class="cells__number">4</div>
+  <div class="cells__number">5</div>
+  <div class="cells__number">6</div>
+  <div class="cells__number">7</div>
+  <div class="cells__number">8</div>
+  <div class="cells__number">9</div>
+  <div class="cells__number">10</div>
+  <div class="cells__number">11</div>
+  <div class="cells__number">12</div>
+  <div class="cells__number">13</div>
+  <div class="cells__number">14</div>
+  <div class="cells__number">15</div>
+  <div class="cells__number">16</div>
+  <div class="cells__number">17</div>
+  <div class="cells__number">18</div>
+  <div class="cells__number">19</div>
+  <div class="cells__number">20</div>
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  <input class="cells__input">
+  
+</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Calender  -->
+<!-- <div class="modal fade" id="calender" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="position: absolute; bottom: 17px;">
+    <div class="modal-content">
+      <div class="modal-body ">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- Google Chrome  -->
+
+<!-- Modal -->
+<div class="modal" id="chrome" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">Chrome</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0; text-align: center;">
+        Coming Soon
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Microsft Store  -->
+
+
+<!-- Modal -->
+<div class="modal" id="store" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">Microsoft Store</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="text-align: center; background: #f0f0f0;">
+        <img src="./images/head image.png" alt="Head Image" class="img-fluid mb-3">
+        <img src="./images/Essential apps.png" alt="Essential Apps" class="img-fluid my-3">
+        <img src="./images/feactured free games.png" alt="Feactured Apps" class="img-fluid my-3">
+        <img src="./images/top free apps.png" alt="Tops Free Apps" class="img-fluid my-3">
+        <img src="./images/apps & games.png" alt="Apps & Games" class="img-fluid my-3">
+        <img src="./images/collection.png" alt="Collection" class="img-fluid my-3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Microsft Teams  -->
+<div class="modal" id="teams" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">Microsoft Teams</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <header class="py-1  border-bottom" style="background: #464775;">
+          <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+            <div class="dropdown">
+              <a href="#" style="font-size: 25px; color: white;" class="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none " id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Microsoft Teams
+              </a>
+            </div>
+            
+            <div class="d-flex align-items-center">
+              <form class="w-100 me-3">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+              
+              <div class="dropdown">
+                <a href="#" style="font-size: 15px; color: white;" class="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none " id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                </a>
+              </div>
+              &nbsp;
+              &nbsp;
+              <div class="flex-shrink-0 dropdown">
+                <a href="#" class="d-block link-dark text-decoration-none " id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://img.icons8.com/color/48/000000/user.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                  <li><a class="dropdown-item" href="#">Saved</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Mangage account</a></li>
+                  <li><a class="dropdown-item" href="#">Teams for personal use</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="d-flex flex-column py-3 flex-shrink-0 bg-light" style="width: 4.5rem;">
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item m-1">
+              <img src="https://img.icons8.com/material-sharp/30/000000/bell.png"/>
+              <p style="font-size: 9px;">Activity</p>
+            </li>
+
+           <li class="nav-item m-1">
+              <img src="https://img.icons8.com/carbon-copy/30/000000/chat--v1.png"/>
+              <p>Chat</p>
+            </li>
+
+            <li class="nav-item m-1">            
+                <img src="https://img.icons8.com/external-justicon-lineal-justicon/30/000000/external-school-bag-elearning-and-education-justicon-lineal-justicon.png"/>
+              <p style="font-size: 9px;">Assignment</p>
+            </li>
+            
+            <li class="nav-item m-1">
+              <img src="https://img.icons8.com/material-rounded/30/000000/conference-call.png"/>
+              <p>Teams</p>
+            </li>
+
+            <li class="nav-item m-1">
+              <img src="https://img.icons8.com/windows/30/000000/planner.png"/>
+              <p style="font-size: 9px;">Calender</p>
+            </li>
+            
+            <li class="nav-item m-1">
+              <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-call-mobile-telephone-those-icons-lineal-those-icons.png"/>
+                <p>Calls</p>
+            </li>
+            <li class="nav-item m-1">
+              <img src="https://img.icons8.com/ios/30/000000/file--v1.png"/>
+                <p>Files</p>
+            </li>
+            <li class="nav-item m-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Right Click Menu  -->
+  <div class="context-menu" id="contextmenu">  
+    <ul style="padding: 0;">
+        <li>View</li>
+        <li>Sort By</li>
+        <li>Refresh</li>
+        <hr style="margin: 0px 15px 0px 15px;">
+        <li style="color: grey;">Paste</li>
+        <li style="color: grey;">Paste Shortcut</li>
+        <hr style="margin: 0px 15px 0px 15px;">
+        <li>New</li>
+        <hr style="margin: 0px 15px 0px 15px;">
+        <li>Display settings</li>
+        <li>Personalize</li>
+    </ul>
+</div>
+
+
+<!-- Microsoft Edge  -->
+<div class="modal" id="microsoftedge" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="staticBackdropLabel">Microsoft Edge</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0; overflow:hidden ;">
+        <iframe style="width: 100%;height: 100%;" src="https://www.bing.com/"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Microsoft Edge  -->
+ <!-- CPU-Z  -->
+ <div class="modal" id="cpuz" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3">
+    <div class="modal-content" style="border: 0px solid rgba(0,0,0,.2);">
+      <div class="modal-header" style="padding: 0; height: 27px;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">CPU-Z</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0;">      
+        <img src="./images/10900K.png" class="img-fluid" alt="GPU-Z" style="width: 100%;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- CPU-Z  -->
+
+ <!-- GPU-Z  -->
+ <div class="modal" id="gpuz"  tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3">
+    <div class="modal-content" style="width: 90%; border: 0px solid rgba(0,0,0,.2);">
+      <div class="modal-header" style="padding: 0; height: 27px;"">
+        <h5 class="modal-title headhead" id="exampleModalLabel">GPU-Z</h5>
+        <div class="closeminibtn" >
+          <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 0;">      
+        <img src="./images/rtx3080ti.png" alt="CPU-Z" style="width: 100%;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- GPU-Z  -->
+<!-- PhotoShop -->
+<div class="modal" id="photoshop" tabindex="-1" data-bs-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog opacity-animate3 modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">Adobe PhotoShop</h5>
+          <div class="closeminibtn" >
+            <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+          </div>
+      </div>
+      <div class="modal-body" style="padding: 0; overflow: hidden;">
+        <iframe style="width: 100%;height: 100%; " src="https://www.photopea.com/"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- VS CODE  -->
+<div class="modal fade" id="vscode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen opacity-animate3">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 0;">
+        <h5 class="modal-title headhead" id="exampleModalLabel">Visual Studio Code</h5>
+          <div class="closeminibtn" >
+            <button type="button" class="winbtn hlink"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"><path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/></svg></button>
+            <button type="button" class="winbtn hlink"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-minimize-applications-windows-those-icons-lineal-those-icons.png"/></button>
+            <button type="button" class="winbtn nred" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></button>
+          </div>
+      </div>
+      <div class="modal-body" style="padding: 0; overflow: hidden;">
+        <iframe src="https://vscode.dev" style="width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- VS CODE  -->
+
+<!-- Volume Menu  -->
+
+<div class="modal" id="volumemenu" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog" style="position: absolute;bottom: 17px;right: 13vh;">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 0;display: table-column-group; width: 19rem; background-color: #d4d7d9;">
+        <p class="spkname" style=" display: grid; margin: 8px 10px;">Speaker (High Definition Audio Device)</p>
+        <div class="volumectrol">
+          <img src="https://img.icons8.com/windows/35/000000/speaker.png">
+          <input type="range" class="myrange" value="70" name="range" style="width: 65%;" onmousemove="rangevalue1.value=value">
+          <output id="rangevalue1"></output>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Volume Menu End -->
+
+<div class="modal" id="winsearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="position: absolute; bottom: 17px; left: 4rem;">
+    <div class="modal-content">
+      <div class="modal-body" style="padding: 0;">
+        <div class="searchmenu">
+          <div class="searmenunavbar">
+              <ul>
+                  <li>All</li>
+                  <li>Apps</li>
+                  <li>Documents</li>
+                  <li>Web</li>
+                  <li>More <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg></li>
+              </ul>
+          </div>
+          <p class="topappsnamr">Top Apps</p>
+          <div class="topapps">
+              <div class="topapplist">
+                  <img src="https://img.icons8.com/color/35/000000/chrome--v1.png"/>
+                  <p>Google Chrome</p>
+              </div>
+              <div class="topapplist">
+                  <img src="https://img.icons8.com/color/35/000000/microsoft-excel-2019--v1.png"/>
+                  <p>Excel</p>
+              </div>
+              <div class="topapplist">
+                  <img src="https://img.icons8.com/fluency/35/000000/microsoft-word-2019.png"/>
+                  <p>Word</p>
+              </div>
+              <div class="topapplist">
+                  <img src="https://img.icons8.com/fluency/30/000000/microsoft-teams-2019.png"/>
+                  <p>Microsoft Teams</p>
+              </div>
+              <div class="topapplist">
+                  <img src="https://img.icons8.com/fluency/35/000000/ms-edge-new.png"/>
+                  <p>Edge</p>
+              </div>
+          </div>
+          <div class="recentapps">
+              <p style="margin: 10px 23px;">Recent</p>
+              <ul>
+                  <li><img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>&nbsp; Visual Studio Code</li>
+                  <li data-bs-toggle="modal" data-bs-target="#calculator" style="border-bottom: none;"><img src="https://img.icons8.com/fluency/30/000000/calculator.png"/>&nbsp; Calculator</li>
+              </ul>
+          </div>
+          <div class="quicksearchs">
+              <p style="margin: 10px;">Quick Search</p>
+              <ul>
+                  <li><img src="https://img.icons8.com/small/30/000000/partly-cloudy-day.png"/>&nbsp; Weather</li>
+                  <li style="border-bottom: none;"><img src="https://img.icons8.com/small/30/000000/news.png"/>&nbsp; Top News</li>
+              </ul>
+          </div>
+          <div class="searchinput">
+              <input type="text" name="Input">
+              
+          </div>
+      </div>
+      </div
+    </div>
+  </div>
+</div>
+
+
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script src="./js/script.js"></script>
+<script src="./js/word.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
