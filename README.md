@@ -20,13 +20,6 @@ Windows 10 Emulator is a website where you can take experience of Windows 10 in 
 - Microsoft Store
 - Microsoft Bing
 
-
-
-## Authors 👨
-
- [Web-Jeet](https://www.github.com/Web-Jit)
-
-
 ##  Thanks For Reading 😀
 
 
