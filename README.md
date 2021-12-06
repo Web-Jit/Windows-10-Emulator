@@ -3,11 +3,6 @@
 
 Windows 10 Emulator is a website where you can take experience of Windows 10 in your Browser
 
-
-## Link 
-[Link for Live Experience](https://win10.webjeet.me)
-
-
 ## Features
 
 - Windows Menu
