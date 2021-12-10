@@ -19,6 +19,7 @@ body{
     height: 46px;
     width: 50%;
     padding: 0px;
+    overflow: hidden;
 }
 .rtaskbar{
     position: absolute;
@@ -28,6 +29,8 @@ body{
     background-color: #e7e9ea;
     height: 46px;
     padding: 0px;
+    overflow: hidden;
+
 }
 .taskbarllink{
     padding: 3px 12px;
@@ -144,8 +147,7 @@ body{
 .winbtn{
   border: 0px solid transparent;
   background-color: transparent;
-  width: 45px;
-  height: 100%;
+  padding: 6px 16px;
 }
 .hlink:hover{
     background-color: #f2f2f2;
@@ -204,6 +206,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .toptitle{
     border-top-left-radius: 10px;
@@ -312,7 +315,8 @@ body{
 }
 .wordtoolbar{
     width: 100%;
-    height: 12%;
+    height: 5rem;
+    float: left;
 }
 .pasteicon{
     float: left;
@@ -321,11 +325,14 @@ body{
     border-color: grey;
     border-right: 2px solid grey;
     border-bottom: 2px solid grey;
-    width: 16%;
+    width: 11rem;
     float: left;
+    height: 80px;
 }
 .pastebtn{
     height: 70px;
+    border: 0px solid transparent;
+    background-color: transparent;
 }
 .wordinput{
     width: 21cm;
@@ -338,11 +345,18 @@ body{
     border-color: grey;
     border-right: 2px solid grey;
     border-bottom: 2px solid grey;
-    width: 27%;
     float: left;
+    height: 80px;
+    padding: 4px;
+    padding-bottom: 1rem;
+    padding-top: 8px;
 }
 .fontinput{
-    width: 150px;
+    width: 6rem;
+    border: 1px solid grey;
+    outline: grey;
+    float: left;
+    border-radius: 0px;
 }
 .fontsize{
     width: 70px;
@@ -356,7 +370,17 @@ body{
     position: absolute;
     right: 0;
 }
-
+.wordbtn{
+  border: 0px solid transparent;
+  background-color: transparent;
+  margin: 1px;
+    padding: 1px;
+    width: 1.4rem;
+    cursor: none;
+}
+.wordbtn:hover{
+  background-color: #d5e1f2;
+}
 #contextmenu{
 	display:none;
 	position: absolute;
@@ -575,4 +599,588 @@ padding: 15px 8px;
 }
 .spacebars{
     border-radius: 0;
+}
+@media (max-width:864px){
+    .ltaskbar{
+        height: 46px;
+    }
+    .ltaskbar li a img{
+        width: 20px;
+    }
+    .imgg{
+        width: 30px;
+    }
+    .recentapps{
+        font-size: 20px;
+    }
+    .font{
+        width: 42%;
+    }
+    .clipboard{
+        width: 21%;
+    }
+}
+
+.accountinfo{
+    background-color: #262626;
+    width: 23%;
+    color: white;
+    float: left;
+    height: 100%;
+}
+.playinfo{
+    background-color: #262626;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 3px;
+}
+.dsufh{
+    
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.dsuf{
+    margin-left: 25px;
+    margin-bottom: 17px;
+    position: absolute;
+    bottom: 0;
+}
+.dsufh img{
+    margin: 6px;
+    float: left;
+    margin-right: 25px;
+}
+.gameinfo{
+    float: left;
+    width: 77%;
+}
+.gamehead{
+    background-color: #262626;
+    color: white;
+    padding-top: 1.5rem;
+    padding-left: 30px;
+    height: 96px;
+}
+.gamehead span{
+    margin-right: 2rem;
+
+}
+.updateimg{
+    background: url(../images/minecraft.jpg);
+    background-size: cover;
+}
+.gamechg{
+    background-color: #262626;
+    color: white;
+    height: 4rem;
+}
+.gamechg button{
+    background-color: #008d45;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gamech{
+    float: left;
+    width: 10rem;
+    margin: 8px;
+}
+/* .playbtn{
+    border: 1px solid ;
+    outline: none;
+    width: 12rem;
+    height: 3rem;
+}
+.play1btn{
+    display: flex;
+    width: auto;
+    float: left;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    bottom: 1px;
+} */
+
+.loading{
+
+}
+
+/* Preloader */
+.windlogo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+  justify-content: center;
+  margin-bottom: 40vh;
+  float: left;
+}
+.windloading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+#preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 99;
+}
+.c-loading__anim1 {
+  width: 48px;
+  height: 48px;
+  animation: a-loading__anim1__Rotate 5s infinite linear;
+}
+
+.a-loading__anim1 {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(189, 189, 189, 0.25);
+  border-left-color: rgba(3, 155, 229, 1);
+  border-top-color: rgba(3, 155, 229, 1);
+  border-radius: 50%;
+  animation: a-loading__anim1__Rotate 720ms infinite
+    cubic-bezier(0, 0.2, 1, 0.8);
+}
+
+@keyframes a-loading__anim1__Rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.c-loading__anim2 {
+  width: 38px;
+  height: 38px;
+  position: relative;
+}
+
+.a-loading__anim2__dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.a-loading__anim2__dot:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.a-loading__anim2__dot1 {
+  transform: rotate(225deg);
+  animation: a-loading__anim2__dot1__Orbit1 5s infinite;
+  animation-delay: 0ms;
+}
+.a-loading__anim2__dot2 {
+  transform: rotate(215deg);
+  animation: a-loading__anim2__dot1__Orbit2 5s infinite;
+  animation-delay: 125ms;
+}
+.a-loading__anim2__dot3 {
+  transform: rotate(205deg);
+  animation: a-loading__anim2__dot1__Orbit3 5s infinite;
+  animation-delay: 250ms;
+}
+.a-loading__anim2__dot4 {
+  transform: rotate(195deg);
+  animation: a-loading__anim2__dot1__Orbit4 5s infinite;
+  animation-delay: 375ms;
+}
+.a-loading__anim2__dot5 {
+  transform: rotate(185deg);
+  animation: a-loading__anim2__dot1__Orbit5 5s infinite;
+  animation-delay: 500ms;
+}
+
+@keyframes a-loading__anim2__dot1__Orbit1 {
+  0% {
+    transform: rotate(225deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(350deg);
+    animation-timing-function: linear;
+  }
+  29% {
+    transform: rotate(495deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(710deg);
+    animation-timing-function: linear;
+  }
+  62% {
+    transform: rotate(855deg);
+    animation-timing-function: ease-in;
+  }
+  66% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a-loading__anim2__dot1__Orbit2 {
+  0% {
+    transform: rotate(215deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(340deg);
+    animation-timing-function: linear;
+  }
+  29% {
+    transform: rotate(485deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(700deg);
+    animation-timing-function: linear;
+  }
+  62% {
+    transform: rotate(845deg);
+    animation-timing-function: ease-in;
+  }
+  66% {
+    transform: rotate(935deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a-loading__anim2__dot1__Orbit3 {
+  0% {
+    transform: rotate(205deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(330deg);
+    animation-timing-function: linear;
+  }
+  29% {
+    transform: rotate(475deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  62% {
+    transform: rotate(835deg);
+    animation-timing-function: ease-in;
+  }
+  66% {
+    transform: rotate(925deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a-loading__anim2__dot1__Orbit4 {
+  0% {
+    transform: rotate(195deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(320deg);
+    animation-timing-function: linear;
+  }
+  29% {
+    transform: rotate(465deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(680deg);
+    animation-timing-function: linear;
+  }
+  62% {
+    transform: rotate(825deg);
+    animation-timing-function: ease-in;
+  }
+  66% {
+    transform: rotate(915deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a-loading__anim2__dot1__Orbit5 {
+  0% {
+    transform: rotate(185deg);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(310deg);
+    animation-timing-function: linear;
+  }
+  29% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(670deg);
+    animation-timing-function: linear;
+  }
+  62% {
+    transform: rotate(815deg);
+    animation-timing-function: ease-in;
+  }
+  66% {
+    transform: rotate(905deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* start menu  */
+.startmenubox{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 33rem;
+  width: 35.5rem;
+  z-index: 1;
+  background-color: #e4e4e4;
+  transition: 0.2s ease-in;
+}
+.startmenubox:target{
+  bottom: 45px;
+  visibility: visible;
+  opacity: 1;
+}
+.startmenuin{
+  z-index: 1;
+  position: relative;
+}
+/*  */
+
+.messagecenterbox{
+  position: absolute;
+  right: 0;
+  bottom: 45px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  height: 94%;
+  width: 20rem;
+  background-color: #e7e9ea;
+  color: #262626;
+}
+.messagecenterbox:target{
+  right: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.messagecenterin{
+  position: relative;
+  z-index: 1;
+}
+.backclosebtn{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.searchmenubox{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0px;
+  left: 3rem;
+  transition: 0.2s ease-in;
+}
+.searchmenubox:target{
+  visibility: visible;
+  opacity: 1;
+  bottom: 45px;
+}
+.searchmenuin{
+  position: relative;
+  z-index: 1;
+}
+.volumecontrolbox{
+  position: absolute;
+  right: 5rem;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+  padding: 0;
+  display: table-column-group;
+  width: 19rem;
+  background-color: #d4d7d9;
+  transition: 0.1s ease-in-out;
+}
+.volumecontrolbox:target{
+  bottom: 45px;
+  visibility: visible;
+  opacity: 1;
+}
+.volumecontrolin{
+  position: relative;
+  z-index: 1;
+}
+.inlinroption{
+  display: flex;
+    float: left;
+}
+.fjgb{
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.fhjgbfhb{
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.userinff{
+  border: 0px solid transparent;
+  background-color: transparent;
+  color: white;
+}
+.userinff span{
+    border-radius: 5rem;
+    background-color: rgb(253, 145, 125);
+  }
+.lefic{
+  float: left;
+  width: 3rem;
+  text-align: center;
+  margin-top: 20.5rem;
+}
+.lefic svg{
+  padding: 8px;
+}
+.lefic svg:hover{
+  background-color: rgb(255, 225, 255,.5);
+}
+
+.allapps{
+  padding: 3px;
+  padding-top: 1.5rem;
+  background-color: #e4e4e4;
+  overflow: scroll;
+  overflow-x: hidden;
+  float: left;
+  width: 16rem;
+  height: 33rem;
+}
+.allapps::-webkit-scrollbar{
+  width: 0px;
+}
+.allapps::-webkit-scrollbar-track{
+  background: transparent;
+}
+.allapps::-webkit-scrollbar-thumb{
+  background: transparent;
+}
+.allapps::-webkit-scrollbar-thumb:hover{
+  background: transparent;
+}
+
+.appslist{
+  width: 16rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  overflow: hidden;
+}
+.appslist:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.personalizeapps{
+  background-color: #e4e4e4;
+  padding-right: 12px;
+  float: left;
+  width: 16rem;
+}
+.firstperapps{
+  width: 15rem;
+  background-color: #e4e4e4;
+}
+.secondperapps{
+  width: 15rem;
+  background-color: #e4e4e4;
+}
+.perapps{
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0dede;
+  margin: 1px;
+}
+.perapps p{
+  position: relative;
+}
+
+.sdjkhgsj{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+}
+.fsdujhsd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+}
+.panname{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
